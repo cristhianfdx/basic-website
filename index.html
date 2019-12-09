@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="lib/boostrap-4.3.1/css/themes/Flatly/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Website con AJAX</title>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link url-principal" href="javascript:void(0)" id="mision">Misión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link url-principal" href="javascript:void(0)" id="vision">Visión</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                href="javascript:void(0)" id="planetas">Planetas <span class="caret"></span></a>
+                            <div class="dropdown-menu" aria-labelledby="planetas" id="lista-planetas">
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="mercurio">Mercurio</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="venus">Venus</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="tierra">Tierra</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="marte">Marte</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="jupiter">Júpiter</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="saturno">Saturno</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="urano">Urano</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="neptuno">Neptuno</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="ceres">Ceres</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="pluton">Plutón</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="haumea">Haumea</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="makemake">Makemake</a>
+                                <a class="dropdown-item url-principal" href="javascript:void(0)" id="eris">Eris</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Cuerpo de la página-->
+    <div class="main mt-5">
+        <div class="container" id="contenido-principal">
+            <h1>Página web utilizando AJAX</h1>
+            <div class="jumbotron mt-5">
+                <h1 class="display-4">Bienvenidos</h1>
+                <p class="lead">Esta página web esta creada utlizando Boostrap implementado con un tema de BootsWatch,
+                    JQuery y la tecnología AJAX.</p>
+                <hr class="my-4">
+                <p>Desarrollador: <span>Cristhian Alexander Forero Domínguez</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-primary text-light w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-5 my-2">
+                    <p>Este sitio web es desarrollado de modo educativo sin ánimo de lucro.</p>
+                    <p>
+                        <span>©2019. Todos los derechos reservados.</span>
+                    </p>
+                </div>
+                <div class="col-md-4 my-2">
+                    <h5>Contacto</h5>
+                    <dl class="contact-list">
+                        <dt>email:</dt>
+                        <dd><a class="text-info" href="mailto:cristhian.forero@cun.edu.co">cristhian.forero@cun.edu.co</a></dd>
+                    </dl>
+                </div>
+                <div class="col-md-4 col-xl-3 my-2 mx-auto">
+                    <h5>Redes sociales</h5>
+                    <ul class="nav-social p-0 pt-1">
+                        <li class="d-inline-block">
+                            <a href="https://es-la.facebook.com/" class="" target="_blank">
+                                <img src="./assets/icons/facebook.svg" alt="facebook icon" width="32" height="32">
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                <img  src="./assets/icons/twitter.svg" alt="twitter icon" width="32" height="32">
+                            </a>
+                        </li>
+                        <li class="d-inline-block">
+                            <a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                <img src="./assets/icons/instagram.svg" alt="instagram icon" width="32" height="32">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="./lib/popper.js/popper.min.js"></script>
+    <script src="./lib/boostrap-4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/js/logic.js"></script>
+</body>
+</html>
+
+
